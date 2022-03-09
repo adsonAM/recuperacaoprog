@@ -1,0 +1,8 @@
+create table roupa
+(
+	id int,
+	marca text,
+	tamanho int,
+	tipo text,
+	primary key (id)
+);

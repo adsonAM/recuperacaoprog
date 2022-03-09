@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Senha</th>
+    </tr>
+    {% for usuario in lista %}
+        <tr>
+            <td>{{ usuario.id }}</td>
+            <td>{{ usuario.nome }}</td>
+            <td>{{ usuario.email }}</td>
+            <td>{{ usuario.senha }}</td>
+            <td><a href="/usuario/{{ usuario.id }}">Editar</a></td>
+            <td><a href="/usuario/remover/{{ usuario.id }}">Remover</a></td>            
+        </tr>
+    {% endfor %}
+</table>

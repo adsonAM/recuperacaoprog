@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Marca</th>
+        <th>Tamanho</th>
+        <th>Tipo</th>
+    </tr>
+    {% for roupa in lista %}
+        <tr>
+            <td>{{ roupa.id }}</td>
+            <td>{{ roupa.marca }}</td>
+            <td>{{ roupa.tamanho }}</td>
+            <td>{{ roupa.tipo }}</td>
+            <td><a href="/roupa/{{ roupa.id }}">Editar</a></td>
+            <td><a href="/roupa/remover/{{ roupa.id }}">Remover</a></td>            
+        </tr>
+    {% endfor %}
+</table>
+<a href="roupa/novo">
+    inserir
+</a>

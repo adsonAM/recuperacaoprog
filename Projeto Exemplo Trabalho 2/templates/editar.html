@@ -1,0 +1,9 @@
+<form action="{{ url_for("editar") }}" method="post">
+<input type="hidden" id="id" name="id" value="{{ roupa.id }}">
+<label for="marca">marca:</label>
+<input type="text" id="marca" name="marca" placeholder="Digite a marca" value="{{ roupa.marca }}">
+<label for="tamanho">tamanho:</label>
+<input type="text" id="tamanho" name="tamanho" placeholder="Digite seu tamanho" value="{{ roupa.tamanho }}">
+<label for="tipo">Tipo:</label>
+<input type="text" id="tipo" name="tipo" placeholder="Digite seu tamanho" value="{{ roupa.tipo }}">
+<button type="submit">Salvar</button>
